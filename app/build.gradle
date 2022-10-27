@@ -243,7 +243,7 @@ android.applicationVariants.all { variant ->
     println("Application ID:    " + [variant.mergedFlavor.applicationId, variant.buildType.applicationIdSuffix].findAll().join())
     println("Build type:        " + variant.buildType.name)
     println("Flavor:            " + variant.flavorName)
-    println("Telemetry enabled: " + !isDebug)
+    println("Telemetry enabled: false")
 
     if (useReleaseVersioning) {
         // The Google Play Store does not allow multiple APKs for the same app that all have the
@@ -280,22 +280,8 @@ android.applicationVariants.all { variant ->
 // -------------------------------------------------------------------------------------------------
 
     buildConfigField 'String', 'SENTRY_TOKEN', 'null'
-    if (!isDebug) {
-        buildConfigField 'boolean', 'CRASH_REPORTING', 'true'
-        // Reading sentry token from local file (if it exists). In a release task on taskcluster it will be available.
-        try {
-            def token = new File("${rootDir}/.sentry_token").text.trim()
-            buildConfigField 'String', 'SENTRY_TOKEN', '"' + token + '"'
-        } catch (FileNotFoundException ignored) {}
-    } else {
-        buildConfigField 'boolean', 'CRASH_REPORTING', 'false'
-    }
-
-    if (!isDebug) {
-        buildConfigField 'boolean', 'TELEMETRY', 'true'
-    } else {
-        buildConfigField 'boolean', 'TELEMETRY', 'false'
-    }
+    buildConfigField 'boolean', 'CRASH_REPORTING', 'false'
+    buildConfigField 'boolean', 'TELEMETRY', 'false'
 
     def buildDate = Config.generateBuildDate()
     // Setting buildDate with every build changes the generated BuildConfig, which slows down the
