@@ -9,6 +9,7 @@ enum class ReleaseChannel {
     Nightly,
     Beta,
     Release,
+    Floorp
     ;
 
     val isReleased: Boolean
@@ -28,13 +29,10 @@ enum class ReleaseChannel {
         get() = !this.isReleased
 
     val isReleaseOrBeta: Boolean
-        get() = this == Release || this == Beta
+        get() = this == Release || this == Beta || this == Floorp
 
     val isRelease: Boolean
-        get() = when (this) {
-            Release -> true
-            else -> false
-        }
+        get() = this == Release || this == Floorp
 
     val isBeta: Boolean
         get() = this == Beta
@@ -56,6 +54,7 @@ object Config {
         "nightly" -> ReleaseChannel.Nightly
         "beta" -> ReleaseChannel.Beta
         "release" -> ReleaseChannel.Release
+        "floorp" -> ReleaseChannel.Floorp
         else -> {
             throw IllegalStateException("Unknown build type: ${BuildConfig.BUILD_TYPE}")
         }
