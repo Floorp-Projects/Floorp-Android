@@ -9,6 +9,7 @@ channels:
   - beta
   - nightly
   - developer
+  - floorp
 features:
   homescreen:
     description: The homescreen that the user goes to when they press home or new tab.
