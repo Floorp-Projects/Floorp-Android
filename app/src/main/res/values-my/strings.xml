@@ -43,7 +43,7 @@
     <string moz:removedIn="101" name="recently_saved_show_all" tools:ignore="UnusedResources">အားလုံးပြပါ</string>
 
     <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
-    <string name="about_content">%1$s ကို Mozilla မှ ထုတ်လုပ်သည်။</string>
+    <string name="about_content">%1$s ကို Ablaze မှ ထုတ်လုပ်သည်။</string>
 
     <!-- Private Browsing -->
     <!-- Explanation for private browsing displayed to users on home view when they first enable private mode

@@ -58,7 +58,7 @@
     <string name="recently_saved_show_all_content_description">Button para maipakita lahat ng mga naka-save na bookmark</string>
 
     <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
-    <string name="about_content">Ang %1$s ay gawa ng Mozilla.</string>
+    <string name="about_content">Ang %1$s ay gawa ng Ablaze.</string>
 
     <!-- Private Browsing -->
     <!-- Title for private session option -->

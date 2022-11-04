@@ -26,7 +26,7 @@
     <string name="recent_bookmarks_title">يېقىنقى خەتكۈچلەر</string>
 
     <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
-    <string name="about_content">%1$s Mozilla ياسىغان.</string>
+    <string name="about_content">%1$s Ablaze ياسىغان.</string>
 
     <!-- Text for the negative button -->
     <string name="cfr_neg_button_text">بولدى رەھمەت</string>

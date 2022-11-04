@@ -25,7 +25,7 @@
     <string name="open_tab_tray_plural">%1$s ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳು. ಟ್ಯಾಬ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
 
     <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
-    <string name="about_content">%1$s ಅನ್ನು ಮೊಜಿಲ್ಲಾ ಉತ್ಪಾದಿಸುತ್ತದೆ.</string>
+    <string name="about_content">%1$s ಅನ್ನು Ablaze ಉತ್ಪಾದಿಸುತ್ತದೆ.</string>
 
     <!-- Private Browsing -->
     <!-- Title for private session option -->

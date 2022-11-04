@@ -44,7 +44,7 @@
     <string moz:removedIn="101" name="recently_saved_show_all" tools:ignore="UnusedResources">هەمووی پیشان بدە</string>
 
     <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
-    <string name="about_content">%1$s بەرهەم هێنراوە لە لایەن مۆزیلاوە.</string>
+    <string name="about_content">%1$s بەرهەم هێنراوە لە لایەن Ablaze</string>
 
     <string name="private_browsing_common_myths">
        چەند ئەفسانەییەک دەربارەی گەڕانی تایبەتیی

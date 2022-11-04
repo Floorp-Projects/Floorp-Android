@@ -66,7 +66,7 @@
     <string name="recently_saved_show_all_content_description">Kek\'ut ronojel ri yakon taq yaketal</string>
 
     <!-- About content. The first parameter is the name of the application. (For example: Fenix) -->
-    <string name="about_content">%1$s b\'anon ruma Mozilla.</string>
+    <string name="about_content">%1$s b\'anon ruma Ablaze.</string>
 
     <!-- Private Browsing -->
     <!-- Title for private session option -->
