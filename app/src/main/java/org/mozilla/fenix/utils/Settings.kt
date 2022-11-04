@@ -282,20 +282,11 @@ class Settings(private val appContext: Context) : PreferencesHolder {
         default = false,
     )
 
-    val isTelemetryEnabled by booleanPreference(
-        appContext.getPreferenceKey(R.string.pref_key_telemetry),
-        default = true,
-    )
+    val isTelemetryEnabled = false
 
-    var isMarketingTelemetryEnabled by booleanPreference(
-        appContext.getPreferenceKey(R.string.pref_key_marketing_telemetry),
-        default = !Config.channel.isMozillaOnline,
-    )
+    var isMarketingTelemetryEnabled = false
 
-    var isExperimentationEnabled by booleanPreference(
-        appContext.getPreferenceKey(R.string.pref_key_experimentation),
-        default = true,
-    )
+    var isExperimentationEnabled = false
 
     var isOverrideTPPopupsForPerformanceTest = false
 
