@@ -84,7 +84,6 @@ gen-external-apklibs
 .sentry_token
 .mls_token
 .nimbus
-.wallpaper_url
 .pocket_consumer_key
 
 # Python Byte-compiled / optimized / DLL files
